@@ -2,247 +2,310 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>RamaGarage</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <div class="nav__bar">
-          <div class="logo nav__logo">
-            <a href="#"><img src="assets/logo.png" alt="logo" /></a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-3-line"></i>
-          </div>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">BERANDA</a></li>
-          <li><a href="#about">TENTANG KAMI</a></li>
-          <li><a href="#service">LAYANAN</a></li>
-          <li><a href="#price">HARGA</a></li>
-          <li><a href="#client">PELANGGAN</a></li>
-          <button class="btn">KONTAK</button>
+    <nav id="desktop-nav">
+      <div class="logo">Rama Rahman</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rama Rahman</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rama Rahman</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='https://drive.google.com/file/d/1bAJAGrANeXiB5Og5_mgT_qjxS3e9qt_Z/view?usp=drivesdk'"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/ramarahman'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ramarhmn'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree<br />Information Systems</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Bachelor of Information Systems with a strong interest and enthusiasm 
+              in the field of information technology. I have skills in programming, web development,
+              and data processing. I also have experience designing databases, performing data analysis,
+              and presenting the results clearly to stakeholders. I have good communication skills, 
+              strong teamwork abilities, and am ready to contribute to challenging projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.PNG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>         
+            <h2 class="experience-sub-title project-title">Project 1</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ramarhmn/ramagarage'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ramagarage.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ramarahman38@gmail.com">ramarahman38@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ramarahman">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-      <div class="section__container header__container" id="home">
-        <div class="header__content">
-          <h1>Selamat Datang di RamaGarage</h1>
-          <div class="header__btn">
-            <button class="btn">Selengkapnya</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="banner__container">
-      <div class="banner__card">
-        <h4>Kami bangga dengan kualitas layanan yang kami berikan.</h4>
-      </div>
-      <div class="banner__card">
-        <h4>Tim kami sangat profesional dan berpengalaman untuk membrikan hasil terbaik bagi pelanggan RamaGarage</h4>
-      </div>
-      <div class="banner__image">
-        <img src="assets/banner.png" alt="banner" />
-      </div>
-    </section>
-
-    <section class="section__container experience__container" id="about">
-      <div class="experience__image">
-        <img src="assets/experience.png" alt="experience" />
-      </div>
-      <div class="experience__content">
-        <p class="section__subheader">Tentang kami</p>
-        <h2 class="section__header">
-          Kami memiliki pengalaman sudah 5 Tahun di bidang ini
-        </h2>
-        <p class="section__description">
-          Menawarkan layanan detailing mobil profesional untuk menjaga tampilan kendaraan anda
-          selalu sempurna. Dari cuci eksterior hingga perawtan interior, kami berkomitmen memberikan
-          hasil yang terbaik.
-        </p>
-        <button class="btn">Selengkapnya</button>
-      </div>
-    </section>
-
-    <section class="service" id="service">
-      <div class="section__container service__container">
-        <p class="section__subheader">Mengapa memilih kami</p>
-        <h2 class="section__header">Detailing Mobil Terbaik</h2>
-        <p class="section__description">
-          Kami bangga dengan kualitas layananan yang kami berikan, memastikan setiap detail mobil
-          anda dirawat dengan teliti.
-        </p>
-        <div class="service__grid">
-          <div class="service__card">
-            <img src="assets/service-1.PNG" alt="service" />
-            <h4>Pembersihan Eksterior</h4>
-            <p>
-              Proses membersihkan bagian luar mobil untuk menghilangkan kotoran yang menempel di body mobil.
-            </p>
-          </div>
-          <div class="service__card">
-            <img src="assets/service-2.PNG" alt="service" />
-            <h4>Polishing dan Proteksi</h4>
-            <p>
-              Proses penghilangan goresan halus maupun kasar dan noda dari permukaan cat mobil.
-            </p>
-          </div>
-          <div class="service__card">
-            <img src="assets/service-3.PNG" alt="service" />
-            <h4>Detailing Interior</h4>
-            <p>
-              Proses membersihkan dan merawat bagian mobil dalam mobil termasuk jok, dashboard, karpet
-              dan area lainnya.
-            </p>
-          </div>
-          <div class="service__card">
-            <img src="assets/service-4.PNG" alt="service" />
-            <h4>Finishing</h4>
-            <p>
-              Langkah terakhir dalam proses detailing untuk memastikan semua aspek detailing telah
-              dilakukan dengan baik.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-   
-
-    <section class="section__container price__container" id="price">
-      <p class="section__subheader">Paket Terbaik</p>
-      <h2 class="section__header">Rincian Harga Kami</h2>
-      <p class="section__description">
-        Kami menawarkan berbagai pilihan harga yang terjangkau.
-      </p>
-      <div class="price__grid">
-        <div class="price__card">
-          <h4>Basic</h4>
-          <h3><sup>Rp</sup>1000.000</h3>
-          <p>Premium Wash</p>
-          <p>1 Step Detailing</p>
-          <p>Full Detailing (Interior & Eksterior)</p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <button class="btn">Go Basic</button>
-        </div>
-        <div class="price__card">
-          <div class="price__card__ribbon">BESTSELLER</div>
-          <h4>PLATINUM</h4>
-          <h3><sup>Rp</sup>5.000.000</h3>
-          <p>Nano Ceramic Premium</p>
-          <p>Premium Wash</p>
-          <p>3 Step Polishing</p>
-          <p>Full Detailing (Interior & Eksterior)</p>
-          <p>Enggine Detailing</p>
-          <p>Wax</p>
-          <button class="btn">Go Premium</button>
-        </div>
-        <div class="price__card">
-          <h4>GOLD</h4>
-          <h3><sup>Rp</sup>3.500.000</h3>
-          <p>Nano Ceramic</p>
-          <p>Premium Wash</p>
-          <p>2 Step Polishing</p>
-          <p>Full Detailing (Interior & Eksterior)</p>
-          <p>Enggine Dressing</p>
-          <br>
-          <br>
-          <button class="btn">Go Standard</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="section__container contact__container">
-        <div class="contact__content">
-          <p class="section__subheader">Hubungi Kami</p>
-          <h2 class="section__header">Tampilan mobil anda akan seperti baru lagi.</h2>
-          <p class="section__description">
-            Hubungi kami untuk membuat janji atau dapatkan informasi lanjut tentang layanan kami
-          </p>
-          <div class="contact__btns">
-            <button class="btn">Layanan Kami</button>
-            <button class="btn">Booking</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <footer class="footer">
-      <div class="section__container subscribe__container">
-        <div class="subscribe__content">
-          <p class="section__subheader">Layanan Terpecaya</p>
-          <h2 class="section__header"></h2>
-          
-        </div>
-      </div>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="logo footer__logo">
-            <a href="#"><img src="assets/logo.png" alt="logo" /></a>
-          </div>
-          <p class="section__description">
-            Kami memiliki pengalaman sudah 5 Tahun di bidang ini.
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-google-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-youtube-line"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Jam</h4>
-          <ul class="footer__links">
-            <li>
-              <p><span>Senin-Jumat 09.00-18.00; Sabtu dan Minggu hanya dengan janji temu</span></p>
-            </li>
-            
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Kontak</h4>
-          <ul class="footer__links">
-            
-            <li>
-              <p>Phone: <span>082171955783</span></p>
-            </li>
-            <li>
-              <p>Email: <span>ramagarage@gmail.com</span></p>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <p>Copyright &#169; 2024 Rama Rahman. All Rights Reserved.</p>
     </footer>
-    <div class="footer__bar">
-      Copyright © 2024 Rama Rahman. All rights reserved.
-    </div>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
