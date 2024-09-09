@@ -4,3 +4,9 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+// Tambahkan event listener untuk inisialisasi AOS
+document.addEventListener("DOMContentLoaded", function() {
+  AOS.init();
+});
+
