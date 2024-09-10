@@ -94,10 +94,11 @@ a:hover {
 }
 
 .menu-links {
+  z-index: 2; /* Tambahkan z-index untuk menu hamburger */
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.342);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -170,6 +171,7 @@ section {
 }
 
 .section__pic-container {
+  z-index: 1; /* Tambahkan z-index untuk gambar profil */
   display: flex;
   height: 400px;
   width: 400px;
