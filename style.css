@@ -66,7 +66,7 @@ a:hover {
   cursor: default;
 }
 
-/* Profil */
+/* Humbuger menu */
 
 #hamburger-nav {
   display: none;
@@ -292,7 +292,6 @@ section {
 .arrow {
   position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
 }
 
 .details-container {
@@ -333,6 +332,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 5rem;
 }
 
 .article-container {
@@ -359,6 +359,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: -12rem;
 }
 
 .color-container {
