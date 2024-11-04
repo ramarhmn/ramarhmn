@@ -292,7 +292,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 20;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -311,9 +311,12 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 #experience {
   position: relative;
+  padding-top: 0; /* Menghapus padding atas jika ada */
+  margin-top: 0;
+  height: auto;
 }
 
 .experience-sub-title {
@@ -352,6 +355,9 @@ article .icon {
 /* PROJECTS SECTION */
 #projects {
   position: relative;
+  padding-top: -1rem;
+  margin-top: -2rem;
+  height: auto;
 }
 
 .color-container {
