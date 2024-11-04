@@ -162,7 +162,6 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
   justify-content: center;
@@ -209,14 +208,12 @@ section {
 }
 
 /* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -264,7 +261,6 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
   position: relative;
 }
@@ -316,7 +312,6 @@ section {
 }
 
 /* EXPERIENCE SECTION */
-
 #experience {
   position: relative;
 }
@@ -332,7 +327,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 5rem;
 }
 
 .article-container {
@@ -356,10 +350,8 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
-
 #projects {
   position: relative;
-  margin-top: -12rem;
 }
 
 .color-container {
@@ -385,7 +377,6 @@ article .icon {
 
 
 /* CONTACT */
-
 #contact {
   display: flex;
   justify-content: center;
@@ -425,7 +416,6 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
 footer {
   height: 26vh;
   margin: 0 1rem;
